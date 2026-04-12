@@ -30,10 +30,11 @@ The avionics hardware integrates multiple subsystems including barometric altitu
 
 ## Repository Structure
 
+- 📖 **[`docs/project_phase_2_report.md`](docs/project_phase_2_report.md)** : **The Complete Project Phase II Academic Report**
 - `docs/` : Detailed documentation (Hardware, Software Architecture, etc.)
 - `firmware/flight_controller/` : Dual ESP32 On-board flight firmware.
 - `firmware/ground_station/` : ESP32 telemetry receiver firmware bridging LoRa and the Web Dashboard.
-- `Web_Dashboard/` : Front-end (Next.js) and Back-end (Flask) sources. (Add your front-end/back-end source code here).
+- `Web_Dashboard/` : Front-end (Next.js) and Back-end (Flask) sources.
 - `images/`: Placeholders for block diagrams and photos during flight testing.
 - `extras/`: Previous project reports and references.
 
