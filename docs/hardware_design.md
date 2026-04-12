@@ -70,6 +70,6 @@ On-board logic and servos are powered by a 2S/3S Li-Po battery. Highly sensitive
 
 ### 7.3 Wireless Ignition (SCUB) Schematic
 ![Wireless Ignition Schematic](../images/ignition_circuit.png)
-![Wireless Ignition Hardware](../images/wipp.jpeg)
+
 
 **Description:** Built primarily to act remote sequence arming logic without manual intervention. This separate **ESP-WROOM-32** triggers a mechanical **Relay Module** connected downstream. When the wireless Launch / Arm command is intercepted on its **SX1278 LoRa** antenna, it latches the Relay's common voltage (7.4V input) seamlessly across the normally-open (NO) pole to the **SCUB Connection Port**, securely initiating the ignition path or pyrotechnic deployment mechanism.
