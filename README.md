@@ -28,9 +28,19 @@ The avionics hardware integrates multiple subsystems including barometric altitu
 - **Redundant Power Distribution**: Multiple UBECs on dedicated Li-Po batteries with isolated logic/actuator rails.
 - **Ground Control Dashboard**: A full real-time Next.js and Flask/WebSocket web dashboard to visualize telemetry, map tracking, and command execution.
 
+## Telemetry Dashboard Previews
+![Dashboard Overview](images/website/Screenshot%202026-04-07%20023358.png)
+*(Telemetry PRO: Unified Mission Control Dashboard)*
+
+![Analytics View](images/website/Screenshot%202026-04-07%20023603.png)
+*(Real-time atmospheric analytics and descent velocity tracking)*
+
+> **View the Complete Application Gallery**: For a deep dive into the individual dashboard elements (Map Tracking, Attitude Indicators, and Packet Histories), explore the **[Full Web Interface Gallery](docs/dashboard_gallery.md)**.
+
 ## Repository Structure
 
 - 📖 **[`docs/project_phase_2_report.md`](docs/project_phase_2_report.md)** : **The Complete Project Phase II Academic Report**
+- 🖼️ **[`docs/dashboard_gallery.md`](docs/dashboard_gallery.md)** : **Full Mission Control Web Interface Gallery**
 - `docs/` : Detailed documentation (Hardware, Software Architecture, etc.)
 - `firmware/flight_controller/` : Dual ESP32 On-board flight firmware.
 - `firmware/ground_station/` : ESP32 telemetry receiver firmware bridging LoRa and the Web Dashboard.
