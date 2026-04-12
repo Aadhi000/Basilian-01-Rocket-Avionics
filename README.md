@@ -1,6 +1,6 @@
 # Basilian-01 Rocket Avionics
 
-![Rocket Avionics System](images/SYSTEM.png)
+![Rocket Avionics System](images/obp.jpg)
 
 ## Overview
 **DEVELOPMENT OF A FAULT-TOLERANT ROCKET AVIONICS HARDWARE SYSTEM FOR FLIGHT CONTROL AND AEROSOL MONITORING**
