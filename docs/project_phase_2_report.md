@@ -161,6 +161,11 @@ The telemetry is funneled into a Python Flask backend bridging physical serial t
 ---
 
 ## Chapter 15 & 18: Results & Conclusion
+
+### Circuit Board Hardware
+![Wireless Ignition Hardware](../images/ignition_photo.jpg)
+*(Fig 15.1: Assembled Wireless Ignition Circuit with ESP32, SX1278 LoRa, and Relay Module)*
+
 The Basilian-01 rocket avionics system successfully demonstrated an effective hardware architecture capable of monitoring flight parameters, maintaining long-range communication, logging data on-board, and executing robust recovery via a multi-trigger FSM without external intervention. Cost-effective, modular, and fault-tolerant, this architecture serves as a superior test bench for experimental payload integration and reliable model rocketry research.
 
 ---
