@@ -62,14 +62,18 @@ On-board logic and servos are powered by a 2S/3S Li-Po battery. Highly sensitive
 
 ### 7.1 Onboard Flight Controller Schematic
 ![Onboard Schematic](../images/onboard_circuit.png)
-**Description:** The primary onboard avionics module features a fully redundant architecture. It comprises two active **ESP-WROOM-32** microcontrollers running in parallel. Power drops down from the 7.4V source via a reliable 5V/5A UBEC to power the logic rails safely. Critical sensors are routed to the primary MCU, including the **NEO-6M GPS** (via UART), **SX1278 LoRa** transceiver (via SPI), and the **BME280** array (via I2C). Furthermore, dual Parachute/Fin servo PWM lines and the **SDS011** laser particulate (Aerosol) payload are distinctly interfaced to provide real-time mechanical control and continuous particulate monitoring. 
+![Assembled Onboard Hardware](../images/obp.jpg)
+
+**Description:** The primary onboard avionics module features a fully redundant architecture. It comprises two active **ESP-WROOM-32** microcontrollers running in parallel. Power drops down from the 7.4V source via a reliable 5V/5A UBEC to power the logic rails safely. Critical sensors are routed to the primary MCU, including the **NEO-6M GPS** (via UART), **SX1278 LoRa** transceiver (via SPI), and the **BME280** array (via I2C). Furthermore, dual Parachute/Fin servo PWM lines and the **SDS011** laser particulate (Aerosol) payload are distinctly interfaced to provide real-time mechanical control and continuous particulate monitoring.  
 
 ### 7.2 Ground Station Schematic
 ![Ground Station Schematic](../images/ground_circuit.png)
+![Assembled Ground Station Hardware](../images/gpp.jpg)
+
 **Description:** The Ground Station receiver unit operates centrally on a single **ESP-WROOM-32** coupled with an independent **SX1278 LoRa** transceiver. This unit actively listens on the 433 MHz band. A key identifier includes the **Passive Buzzer** wired to GPIO 27, ensuring audible alerts (`BEEP_TX`, `BEEP_RX`) sound immediately upon telemetry packet reception or ground-issued remote command execution bounds (like Launch, Abort, or Eject).
 
 ### 7.3 Wireless Ignition (SCUB) Schematic
 ![Wireless Ignition Schematic](../images/ignition_circuit.png)
-
+![Assembled Wireless Ignition Hardware](../images/wipp.jpeg)
 
 **Description:** Built primarily to act remote sequence arming logic without manual intervention. This separate **ESP-WROOM-32** triggers a mechanical **Relay Module** connected downstream. When the wireless Launch / Arm command is intercepted on its **SX1278 LoRa** antenna, it latches the Relay's common voltage (7.4V input) seamlessly across the normally-open (NO) pole to the **SCUB Connection Port**, securely initiating the ignition path or pyrotechnic deployment mechanism.
