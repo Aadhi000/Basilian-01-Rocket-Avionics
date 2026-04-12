@@ -37,16 +37,28 @@ The avionics hardware integrates multiple subsystems including barometric altitu
 
 > **View the Complete Application Gallery**: For a deep dive into the individual dashboard elements (Map Tracking, Attitude Indicators, and Packet Histories), explore the **[Full Web Interface Gallery](docs/dashboard_gallery.md)**.
 
-## Repository Structure
+## 📚 Documentation Guide
 
-- 📖 **[`docs/project_phase_2_report.md`](docs/project_phase_2_report.md)** : **The Complete Project Phase II Academic Report**
-- 🖼️ **[`docs/dashboard_gallery.md`](docs/dashboard_gallery.md)** : **Full Mission Control Web Interface Gallery**
-- `docs/` : Detailed documentation (Hardware, Software Architecture, etc.)
-- `firmware/flight_controller/` : Dual ESP32 On-board flight firmware.
-- `firmware/ground_station/` : ESP32 telemetry receiver firmware bridging LoRa and the Web Dashboard.
-- `Web_Dashboard/` : Front-end (Next.js) and Back-end (Flask) sources.
-- `images/`: Placeholders for block diagrams and photos during flight testing.
-- `extras/`: Previous project reports and references.
+This repository is split into highly specialized documents so you can easily explore specific parts of the project:
+
+### 1. The Academic Core
+- 📖 **[`docs/project_phase_2_report.md`](docs/project_phase_2_report.md)**: The crown jewel. The complete Phase II university report spanning 18 chapters detailing the literature survey, component tolerances, scientific derivations, and hardware validation.
+
+### 2. The Physical Hardware
+- 🔌 **[`docs/hardware_design.md`](docs/hardware_design.md)**: The electronic blueprints. Details the pin mappings and displays the actual circuit schematics alongside photos of the real-world soldered hardware (Onboard Unit, Ground Station, Wireless Ignition).
+
+### 3. The Flight Logic
+- 🧠 **[`docs/software_architecture.md`](docs/software_architecture.md)**: The fundamental logic concepts. Explains the timeline of the Finite State Machine and how apogee detection algorithms dictate parachute deployment.
+- ⚙️ **[`docs/code_structure_and_details.md`](docs/code_structure_and_details.md)**: The exact firmware breakdown. Explains how the raw C++ `.ino` code manages sensors, servos, and SPI telemetry.
+
+### 4. The Mission Control Web App
+- 💻 **[`docs/dashboard_frontend.md`](docs/dashboard_frontend.md)** & **[`docs/dashboard_backend.md`](docs/dashboard_backend.md)**: Explains the full-stack architecture. Details how Next.js handles the 3D GUI and how Python/Flask pipes raw LoRa telemetry to WebSockets.
+- 🖼️ **[`docs/dashboard_gallery.md`](docs/dashboard_gallery.md)**: A visual showcase gallery displaying screenshots of every active user interface in the Ground Control software.
+
+### Source Directories
+- `firmware/` : The raw executable `.ino` code for the dual ESP32s and payload loggers.
+- `Web_Dashboard/` : Front-end (React/Next.js) and Back-end (Flask/PostgreSQL) source code.
+- `images/`: Assets, photos, and diagrams.
 
 ## Getting Started
 See the [Hardware Design Document](docs/hardware_design.md) for pinouts and schematic references.
