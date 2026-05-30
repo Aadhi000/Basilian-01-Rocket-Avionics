@@ -7,11 +7,9 @@
 
 The hardware design and integration of Basilian-01 present a model rocket avionics system developed for reliable flight monitoring, effective recovery control, and atmospheric aerosol data acquisition. This project is centered on a dual-redundant embedded hardware architecture to enhance mission reliability and eliminate single-point failures during critical flight phases.
 
-### Team Members
+### Team Lead
 * AADIL MUHAMMED
-* BEVAL PHILIP MATHEW
-* RAHUL B
-* SIBI B JOHN
+
 
 *Mar Baselios Christian College of Engineering and Technology*
 
